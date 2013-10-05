@@ -1,5 +1,6 @@
-PATH
-  remote: /Users/mertonium/Code/pipedriver
+GIT
+  remote: git://github.com/ElectNext/pipedriver.git
+  revision: 59a173f20512c2a33aa4ac6b995a3d7146d18dd3
   specs:
     pipedriver (0.0.6)
       multi_json (~> 1.1)
