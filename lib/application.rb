@@ -28,8 +28,7 @@ post '/newsletter_signup' do
     js_response[:errors] = { "email" => ["can't be blank"] }
   else
     Pipedriver.api_key = ENV['PIPEDRIVE_API_KEY'].to_s
-    puts "HERRO!"
-    puts Pipedriver.api_key
+    Pipedriver.verify_ssl_certs = true
     person_attrs = {
       :name => params[:contact][:name],
       :email => params[:contact][:email],
