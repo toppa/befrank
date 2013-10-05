@@ -59,3 +59,8 @@ post '/newsletter_signup' do
   
   js_response.to_json
 end
+
+get '*' do
+  file_path = File.join(File.dirname(__FILE__), 'public',  request.path.downcase)
+  File.exist?(file_path) ? send_file(file_path) : halt(404)
+end
