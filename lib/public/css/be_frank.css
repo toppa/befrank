@@ -1,0 +1,1586 @@
+@font-face {
+  font-family: 'MuseoSlab500';
+  src: url("../fonts/Museo_Slab_500-webfont.eot");
+  src: url("../fonts/Museo_Slab_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo_Slab_500-webfont.woff") format("woff"), url("../fonts/Museo_Slab_500-webfont.ttf") format("truetype"), url("../fonts/Museo_Slab_500-webfont.svg#MuseoSlab500") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSans300Regular';
+  src: url("../fonts/MuseoSans_300-webfont.eot");
+  src: url("../fonts/MuseoSans_300-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans_300-webfont.woff") format("woff"), url("../fonts/MuseoSans_300-webfont.ttf") format("truetype"), url("../fonts/MuseoSans_300-webfont.svg#MuseoSans300Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSans700';
+  src: url("../fonts/MuseoSans_700-webfont.eot");
+  src: url("../fonts/MuseoSans_700-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans_700-webfont.woff") format("woff"), url("../fonts/MuseoSans_700-webfont.ttf") format("truetype"), url("../fonts/MuseoSans_700-webfont.svg#MuseoSans700") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@-webkit-keyframes flicker {
+  /* line 15, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  from {
+    opacity: 0.50;
+  }
+
+  /* line 16, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  4% {
+    opacity: 0.50;
+  }
+
+  /* line 17, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  6% {
+    opacity: 0.45;
+  }
+
+  /* line 18, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  8% {
+    opacity: 0.55;
+  }
+
+  /* line 19, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  10% {
+    opacity: 0.45;
+  }
+
+  /* line 20, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  11% {
+    opacity: 0.50;
+  }
+
+  /* line 21, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  12% {
+    opacity: 0.65;
+  }
+
+  /* line 22, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  14% {
+    opacity: 0.55;
+  }
+
+  /* line 23, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  16% {
+    opacity: 0.70;
+  }
+
+  /* line 24, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  17% {
+    opacity: 0.55;
+  }
+
+  /* line 25, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  19% {
+    opacity: 0.50;
+  }
+
+  /* line 26, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  20% {
+    opacity: 0.50;
+  }
+
+  /* line 27, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  24% {
+    opacity: 0.50;
+  }
+
+  /* line 28, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  26% {
+    opacity: 0.99;
+  }
+
+  /* line 29, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  28% {
+    opacity: 0.50;
+  }
+
+  /* line 30, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  38% {
+    opacity: 0.45;
+  }
+
+  /* line 31, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  40% {
+    opacity: 0.50;
+  }
+
+  /* line 32, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  42% {
+    opacity: 0.60;
+  }
+
+  /* line 33, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  44% {
+    opacity: 0.50;
+  }
+
+  /* line 34, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  46% {
+    opacity: 0.50;
+  }
+
+  /* line 35, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  56% {
+    opacity: 0.50;
+  }
+
+  /* line 36, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  58% {
+    opacity: 0.75;
+  }
+
+  /* line 37, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  60% {
+    opacity: 0.50;
+  }
+
+  /* line 38, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  68% {
+    opacity: 0.50;
+  }
+
+  /* line 39, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  70% {
+    opacity: 0.80;
+  }
+
+  /*peak*/
+  /* line 40, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  72% {
+    opacity: 0.70;
+  }
+
+  /* line 41, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  93% {
+    opacity: 0.70;
+  }
+
+  /* line 42, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  95% {
+    opacity: 0.90;
+  }
+
+  /*peak*/
+  /* line 43, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  97% {
+    opacity: 0.70;
+  }
+
+  /* line 44, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  to {
+    opacity: 0.50;
+  }
+}
+
+@-moz-keyframes flicker {
+  /* line 15, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  from {
+    opacity: 0.50;
+  }
+
+  /* line 16, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  4% {
+    opacity: 0.50;
+  }
+
+  /* line 17, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  6% {
+    opacity: 0.45;
+  }
+
+  /* line 18, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  8% {
+    opacity: 0.55;
+  }
+
+  /* line 19, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  10% {
+    opacity: 0.45;
+  }
+
+  /* line 20, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  11% {
+    opacity: 0.50;
+  }
+
+  /* line 21, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  12% {
+    opacity: 0.65;
+  }
+
+  /* line 22, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  14% {
+    opacity: 0.55;
+  }
+
+  /* line 23, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  16% {
+    opacity: 0.70;
+  }
+
+  /* line 24, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  17% {
+    opacity: 0.55;
+  }
+
+  /* line 25, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  19% {
+    opacity: 0.50;
+  }
+
+  /* line 26, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  20% {
+    opacity: 0.50;
+  }
+
+  /* line 27, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  24% {
+    opacity: 0.50;
+  }
+
+  /* line 28, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  26% {
+    opacity: 0.99;
+  }
+
+  /* line 29, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  28% {
+    opacity: 0.50;
+  }
+
+  /* line 30, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  38% {
+    opacity: 0.45;
+  }
+
+  /* line 31, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  40% {
+    opacity: 0.50;
+  }
+
+  /* line 32, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  42% {
+    opacity: 0.60;
+  }
+
+  /* line 33, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  44% {
+    opacity: 0.50;
+  }
+
+  /* line 34, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  46% {
+    opacity: 0.50;
+  }
+
+  /* line 35, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  56% {
+    opacity: 0.50;
+  }
+
+  /* line 36, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  58% {
+    opacity: 0.75;
+  }
+
+  /* line 37, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  60% {
+    opacity: 0.50;
+  }
+
+  /* line 38, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  68% {
+    opacity: 0.50;
+  }
+
+  /* line 39, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  70% {
+    opacity: 0.80;
+  }
+
+  /*peak*/
+  /* line 40, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  72% {
+    opacity: 0.70;
+  }
+
+  /* line 41, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  93% {
+    opacity: 0.70;
+  }
+
+  /* line 42, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  95% {
+    opacity: 0.90;
+  }
+
+  /*peak*/
+  /* line 43, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  97% {
+    opacity: 0.70;
+  }
+
+  /* line 44, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  to {
+    opacity: 0.50;
+  }
+}
+
+@-ms-keyframes flicker {
+  /* line 15, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  from {
+    opacity: 0.50;
+  }
+
+  /* line 16, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  4% {
+    opacity: 0.50;
+  }
+
+  /* line 17, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  6% {
+    opacity: 0.45;
+  }
+
+  /* line 18, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  8% {
+    opacity: 0.55;
+  }
+
+  /* line 19, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  10% {
+    opacity: 0.45;
+  }
+
+  /* line 20, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  11% {
+    opacity: 0.50;
+  }
+
+  /* line 21, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  12% {
+    opacity: 0.65;
+  }
+
+  /* line 22, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  14% {
+    opacity: 0.55;
+  }
+
+  /* line 23, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  16% {
+    opacity: 0.70;
+  }
+
+  /* line 24, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  17% {
+    opacity: 0.55;
+  }
+
+  /* line 25, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  19% {
+    opacity: 0.50;
+  }
+
+  /* line 26, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  20% {
+    opacity: 0.50;
+  }
+
+  /* line 27, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  24% {
+    opacity: 0.50;
+  }
+
+  /* line 28, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  26% {
+    opacity: 0.99;
+  }
+
+  /* line 29, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  28% {
+    opacity: 0.50;
+  }
+
+  /* line 30, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  38% {
+    opacity: 0.45;
+  }
+
+  /* line 31, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  40% {
+    opacity: 0.50;
+  }
+
+  /* line 32, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  42% {
+    opacity: 0.60;
+  }
+
+  /* line 33, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  44% {
+    opacity: 0.50;
+  }
+
+  /* line 34, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  46% {
+    opacity: 0.50;
+  }
+
+  /* line 35, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  56% {
+    opacity: 0.50;
+  }
+
+  /* line 36, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  58% {
+    opacity: 0.75;
+  }
+
+  /* line 37, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  60% {
+    opacity: 0.50;
+  }
+
+  /* line 38, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  68% {
+    opacity: 0.50;
+  }
+
+  /* line 39, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  70% {
+    opacity: 0.80;
+  }
+
+  /*peak*/
+  /* line 40, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  72% {
+    opacity: 0.70;
+  }
+
+  /* line 41, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  93% {
+    opacity: 0.70;
+  }
+
+  /* line 42, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  95% {
+    opacity: 0.90;
+  }
+
+  /*peak*/
+  /* line 43, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  97% {
+    opacity: 0.70;
+  }
+
+  /* line 44, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  to {
+    opacity: 0.50;
+  }
+}
+
+@-o-keyframes flicker {
+  /* line 15, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  from {
+    opacity: 0.50;
+  }
+
+  /* line 16, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  4% {
+    opacity: 0.50;
+  }
+
+  /* line 17, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  6% {
+    opacity: 0.45;
+  }
+
+  /* line 18, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  8% {
+    opacity: 0.55;
+  }
+
+  /* line 19, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  10% {
+    opacity: 0.45;
+  }
+
+  /* line 20, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  11% {
+    opacity: 0.50;
+  }
+
+  /* line 21, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  12% {
+    opacity: 0.65;
+  }
+
+  /* line 22, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  14% {
+    opacity: 0.55;
+  }
+
+  /* line 23, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  16% {
+    opacity: 0.70;
+  }
+
+  /* line 24, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  17% {
+    opacity: 0.55;
+  }
+
+  /* line 25, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  19% {
+    opacity: 0.50;
+  }
+
+  /* line 26, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  20% {
+    opacity: 0.50;
+  }
+
+  /* line 27, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  24% {
+    opacity: 0.50;
+  }
+
+  /* line 28, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  26% {
+    opacity: 0.99;
+  }
+
+  /* line 29, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  28% {
+    opacity: 0.50;
+  }
+
+  /* line 30, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  38% {
+    opacity: 0.45;
+  }
+
+  /* line 31, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  40% {
+    opacity: 0.50;
+  }
+
+  /* line 32, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  42% {
+    opacity: 0.60;
+  }
+
+  /* line 33, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  44% {
+    opacity: 0.50;
+  }
+
+  /* line 34, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  46% {
+    opacity: 0.50;
+  }
+
+  /* line 35, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  56% {
+    opacity: 0.50;
+  }
+
+  /* line 36, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  58% {
+    opacity: 0.75;
+  }
+
+  /* line 37, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  60% {
+    opacity: 0.50;
+  }
+
+  /* line 38, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  68% {
+    opacity: 0.50;
+  }
+
+  /* line 39, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  70% {
+    opacity: 0.80;
+  }
+
+  /*peak*/
+  /* line 40, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  72% {
+    opacity: 0.70;
+  }
+
+  /* line 41, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  93% {
+    opacity: 0.70;
+  }
+
+  /* line 42, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  95% {
+    opacity: 0.90;
+  }
+
+  /*peak*/
+  /* line 43, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  97% {
+    opacity: 0.70;
+  }
+
+  /* line 44, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  to {
+    opacity: 0.50;
+  }
+}
+
+@-keyframes flicker {
+  /* line 15, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  from {
+    opacity: 0.50;
+  }
+
+  /* line 16, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  4% {
+    opacity: 0.50;
+  }
+
+  /* line 17, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  6% {
+    opacity: 0.45;
+  }
+
+  /* line 18, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  8% {
+    opacity: 0.55;
+  }
+
+  /* line 19, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  10% {
+    opacity: 0.45;
+  }
+
+  /* line 20, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  11% {
+    opacity: 0.50;
+  }
+
+  /* line 21, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  12% {
+    opacity: 0.65;
+  }
+
+  /* line 22, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  14% {
+    opacity: 0.55;
+  }
+
+  /* line 23, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  16% {
+    opacity: 0.70;
+  }
+
+  /* line 24, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  17% {
+    opacity: 0.55;
+  }
+
+  /* line 25, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  19% {
+    opacity: 0.50;
+  }
+
+  /* line 26, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  20% {
+    opacity: 0.50;
+  }
+
+  /* line 27, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  24% {
+    opacity: 0.50;
+  }
+
+  /* line 28, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  26% {
+    opacity: 0.99;
+  }
+
+  /* line 29, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  28% {
+    opacity: 0.50;
+  }
+
+  /* line 30, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  38% {
+    opacity: 0.45;
+  }
+
+  /* line 31, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  40% {
+    opacity: 0.50;
+  }
+
+  /* line 32, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  42% {
+    opacity: 0.60;
+  }
+
+  /* line 33, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  44% {
+    opacity: 0.50;
+  }
+
+  /* line 34, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  46% {
+    opacity: 0.50;
+  }
+
+  /* line 35, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  56% {
+    opacity: 0.50;
+  }
+
+  /* line 36, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  58% {
+    opacity: 0.75;
+  }
+
+  /* line 37, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  60% {
+    opacity: 0.50;
+  }
+
+  /* line 38, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  68% {
+    opacity: 0.50;
+  }
+
+  /* line 39, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  70% {
+    opacity: 0.80;
+  }
+
+  /*peak*/
+  /* line 40, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  72% {
+    opacity: 0.70;
+  }
+
+  /* line 41, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  93% {
+    opacity: 0.70;
+  }
+
+  /* line 42, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  95% {
+    opacity: 0.90;
+  }
+
+  /*peak*/
+  /* line 43, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  97% {
+    opacity: 0.70;
+  }
+
+  /* line 44, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  to {
+    opacity: 0.50;
+  }
+}
+
+/* line 3, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#title-page {
+  padding: 245px 0 190px;
+}
+
+/* line 7, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#light-bulb {
+  width: 32px;
+  height: 55px;
+  background: #00040f url("../img/home_sprite.png") 0 0 no-repeat;
+  margin: -105px auto 55px;
+  -webkit-animation: flicker 3s infinite linear;
+  -moz-animation: flicker 3s infinite linear;
+  -ms-animation: flicker 3s infinite linear;
+  -o-animation: flicker 3s infinite linear;
+  animation: flicker 3s infinite linear;
+}
+
+/* line 18, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.black-bg {
+  background-color: #00040f;
+}
+
+/* line 21, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.navbar-header {
+  background-color: #00040f;
+  padding: 0 0 20px 0;
+}
+/* line 24, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.navbar-header .logo {
+  font-family: "MuseoSlab500";
+  font-size: 1.857em;
+  /* 18px / 14px */
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  padding: 0 0 0 15px;
+}
+/* line 32, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.navbar-header .logo .red {
+  color: #b00f15;
+}
+/* line 35, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.navbar-header .logo .blue {
+  color: #0a84b8;
+}
+/* line 39, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.navbar-header .navbar-nav {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  padding: 0 0px 0 15px;
+}
+/* line 44, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.navbar-header .navbar-nav a {
+  font-family: "MuseoSans300Regular";
+  font-size: 1em;
+  /* 18px / 14px */
+  color: #c4c9d6;
+  text-decoration: none;
+}
+/* line 49, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.navbar-header .navbar-nav a:hover {
+  color: #3498db;
+}
+/* line 52, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.navbar-header .navbar-nav a.active {
+  font-family: "MuseoSans700";
+  color: #3498db;
+}
+/* line 57, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.navbar-header .navbar-nav li {
+  padding: 0 31px 0 31px;
+  list-style-type: none;
+}
+
+/* line 64, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#what-ifs-page {
+  background-color: #000000;
+}
+
+/* line 68, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.what-if-heading {
+  font-family: "Futura";
+  font-size: 10.4285em;
+  /* 132px / 14px */
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #f2f0f0;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+/* line 78, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.what-if-subtitle {
+  font-family: "MuseoSlab500";
+  font-size: 2.414285em;
+  /* 30px / 14px */
+  line-height: 1.5em;
+  color: #e0e0e1;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* line 89, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.what-if-more {
+  font-family: "MuseoSans300Regular";
+  font-size: 1.5em;
+  text-align: center;
+  color: #D7D7D7;
+  display: block;
+  padding: 15px 0 15px 0;
+  margin-top: 90px;
+}
+
+/* line 99, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#what-ifs-page button {
+  background: #25bb99;
+  margin: auto;
+  font-family: "MuseoSans300Regular";
+  color: #ffffff;
+  font-size: 1.41428em;
+  margin-top: 10px;
+  padding: 9px 12px;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+}
+
+/* line 115, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.what-if-small {
+  font-family: "Futura";
+  font-size: 3.4285em;
+  /* 132px / 14px */
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #f2f0f0;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* line 125, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.what-if-question {
+  font-family: "MuseoSlab500";
+  font-size: 2.54285em;
+  /* 30px / 14px */
+  line-height: 1.5em;
+  color: #e0e0e1;
+  text-align: center;
+}
+
+/* line 133, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.what-if-more {
+  font-family: "MuseoSans300Regular";
+  font-size: 1.65em;
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 15px 0 15px 0;
+  margin-top: 90px;
+}
+
+/* line 143, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#what-ifs-page button {
+  background: #25bb99;
+  margin: auto;
+  font-family: "MuseoSans300Regular";
+  color: #fff;
+  font-size: 1.41428em;
+  margin-top: 10px;
+  padding: 13px 17px;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+}
+
+/* line 159, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.what-if-group {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 22%;
+  line-height: 1.2em;
+  min-height: 700px;
+}
+/* line 168, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.what-if-group.what-if-1 {
+  background-image: url("../img/what-if-background-1.jpg");
+}
+/* line 169, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.what-if-group.what-if-2 {
+  background-color: #3d343f;
+}
+/* line 172, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.what-if-group.what-if-3 {
+  background-image: url("../img/what-if-background-3.jpg");
+}
+/* line 173, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.what-if-group.what-if-4 {
+  background-image: url("../img/what-if-background-4.jpg");
+}
+/* line 175, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.what-if-group.what-if-5 {
+  background-image: url("../img/what-if-background-5.jpg");
+}
+/* line 177, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+.what-if-group.what-if-5 .what-if-question {
+  margin-top: 100px;
+}
+
+/* line 183, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#then-what-page {
+  background-color: #ffffff;
+  padding: 162px 0 160px;
+  width: 50%;
+  margin: 0 auto;
+}
+/* line 188, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#then-what-page h3 {
+  font-family: "MuseoSans300Regular";
+  font-size: 1.71428em;
+  /* 24px / 14px */
+  text-align: center;
+  line-height: 1.8em;
+}
+/* line 194, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#then-what-page .bubble-image {
+  background: transparent url("../img/home_sprite.png") -592px -3px no-repeat;
+  width: 79px;
+  height: 51px;
+  margin: 76px auto 72px;
+}
+
+/* line 208, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page {
+  background-color: #00040f;
+  padding: 60px 0 60px;
+}
+/* line 211, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page h5 {
+  font-family: "MuseoSans300Regular";
+  color: #c4c9d6;
+  font-size: 1.61428em;
+  /* 24px / 14px */
+  text-align: center;
+  margin-bottom: 36px;
+  margin-top: 10px;
+  font-style: normal;
+}
+/* line 219, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page h5.big-text {
+  padding-top: 0;
+  font-size: 3.42857em;
+  /* 48px / 14px */
+  margin-bottom: 76px;
+}
+/* line 231, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .browser-example {
+  width: 599px;
+  margin: 0 auto 57px;
+}
+/* line 234, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .browser-example .chrome {
+  background: url("../img/home_sprite.png") no-repeat 0 -329px;
+  width: 100%;
+  padding-top: 33px;
+}
+/* line 239, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .browser-example .window {
+  width: 100%;
+  margin-right: 1px;
+  height: 325px;
+  overflow: scroll;
+  text-align: center;
+  background-color: #ffffff;
+}
+/* line 248, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .fp-stamp {
+  width: 94px;
+  height: 51px;
+  background: url("../img/home_sprite.png") no-repeat -611px -328px;
+  margin: 0 auto 30px;
+}
+/* line 254, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .fp-heading {
+  font-family: "MuseoSans300Regular";
+  color: #c4c9d6;
+  text-align: center;
+  font-size: 1.8285714286em;
+  /* 20px / 14px */
+  margin-bottom: 40px;
+}
+/* line 261, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page p {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  color: #c4c9d6;
+  font-family: "MuseoSans300Regular";
+  font-size: 1.4285714286em;
+  /* 20px / 14px */
+}
+/* line 269, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page img {
+  margin: auto;
+  display: block;
+  padding: 5px 0 35px 0;
+}
+/* line 275, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .result.row {
+  margin-bottom: 90px;
+}
+/* line 277, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .result.row h2 {
+  font-family: "MuseoSans700";
+  color: #c4c9d6;
+  font-size: 3.6em;
+}
+/* line 282, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .result.row h3 {
+  font-family: "MuseoSans300Regular";
+  color: #c4c9d6;
+  font-size: 1.5em;
+}
+/* line 287, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .result.row a.learn-more {
+  font-family: "Georgia", serif;
+  font-size: 1em;
+  font-style: italic;
+  width: 100%;
+  color: #3498db;
+  padding-top: 10px;
+  text-decoration: none;
+}
+/* line 296, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .result.row .plus {
+  text-align: center;
+}
+/* line 301, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .social-proof h5 {
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  text-align: left;
+}
+/* line 309, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .testimonial h2, #featured-perspective-page .testimonial h3 {
+  font-size: 3em;
+  font-family: "MuseoSans300Regular";
+  color: #3498db;
+}
+/* line 314, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .testimonial h3 {
+  font-size: 1.35em;
+  padding-bottom: 10px;
+}
+/* line 318, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .testimonial .org {
+  margin-bottom: 50px;
+}
+/* line 321, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#featured-perspective-page .testimonial .quoter {
+  float: left;
+  padding: 27px 0 0 30px;
+  font-family: "MuseoSans300Regular";
+  color: #fff;
+  font-size: 1.1em;
+}
+
+/* line 388, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page {
+  background-color: #dddee1;
+  padding: 60px 0 60px;
+}
+/* line 391, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .intro {
+  padding-bottom: 40px;
+}
+/* line 394, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page h2, #experts-page h3 {
+  font-family: "MuseoSans700";
+  color: #232222;
+  font-size: 2.5em;
+  text-align: center;
+}
+/* line 400, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page h3 {
+  font-size: 1.75em;
+  padding: 10px 0 50px 0;
+}
+/* line 404, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page h4 {
+  font-family: "MuseoSans300Regular";
+  color: #232222;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 50px;
+}
+/* line 411, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page p {
+  font-family: "MuseoSans300Regular";
+  color: #232222;
+  font-size: 1.2em;
+  padding: 6px 0;
+}
+/* line 417, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .number {
+  padding-bottom: 70px;
+}
+/* line 419, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .number p.big-number {
+  font-family: "MuseoSans700";
+  color: #55a9f7;
+  font-size: 5em;
+  text-align: center;
+}
+/* line 425, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .number p.explanation {
+  font-size: 1.6em;
+  margin-top: -25px;
+}
+/* line 429, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .number p {
+  font-size: 1.1em;
+  text-align: center;
+  padding: 0 60px 0 60px;
+}
+/* line 434, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .number .number.col-md-4 {
+  width: 26%;
+}
+/* line 437, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .number .firstnumber.col-md-4 {
+  width: 26%;
+  margin-left: 180px;
+}
+/* line 443, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .features h5, #experts-page .features h6 {
+  font-family: "MuseoSans300Regular";
+  color: #585858;
+  font-size: 2em;
+}
+/* line 448, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .features p.contact {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  color: cadetblue;
+}
+/* line 453, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .features h6 {
+  text-align: center;
+}
+/* line 456, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .features .mail.row {
+  padding: 90px 0 90px 0;
+}
+/* line 458, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .features .mail.row img {
+  padding-top: 30px;
+}
+/* line 462, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .features .browser.row {
+  padding-bottom: 120px;
+}
+/* line 464, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .features .browser.row img {
+  padding-top: 10px;
+}
+/* line 468, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .features .support.row {
+  padding-bottom: 90px;
+}
+/* line 470, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .features .support.row img {
+  margin-top: -15px;
+}
+/* line 476, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .case img {
+  padding-top: 20px;
+}
+/* line 481, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .contact.row {
+  font-family: 'Georgia';
+  font-style: italic;
+  color: #373838;
+  text-align: center;
+  font-size: 1.8em;
+  margin: 85px auto;
+}
+/* line 491, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .cta.row h4 {
+  padding-bottom: 20px;
+}
+/* line 495, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .start {
+  padding-top: 10px;
+}
+/* line 498, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page input[type="text"] {
+  width: 100%;
+  border: 0;
+  background-color: #ebeff4;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  padding: 10px;
+  font-family: "MuseoSans300Regular";
+  color: #92969b;
+  font-style: italic;
+  margin: 5px;
+}
+/* line 509, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page button {
+  font-family: "MuseoSlab500";
+  color: #ffffff;
+  font-size: 1.71428em;
+  /* 24px / 14px */
+  background-color: #25bb99;
+  margin: 8px;
+}
+/* line 517, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .keep-in-touch-form label {
+  text-align: left;
+}
+/* line 520, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .keep-in-touch-form .form-group.row {
+  font-family: "MuseoSans300Regular";
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* line 526, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#experts-page .keep-in-touch-form .form-group a {
+  font-size: 1em;
+  color: #3498db;
+  padding-left: 8px;
+  text-decoration: none;
+  font-family: "MuseoSans300Regular";
+  float: left;
+}
+
+/* line 539, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#about-us p {
+  font-family: "MuseoSans300Regular";
+  color: #232222;
+  font-size: 1.15em;
+  padding-bottom: 20px;
+}
+/* line 545, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#about-us .electnext {
+  margin-top: 150px;
+}
+/* line 548, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+#about-us img {
+  margin-top: 200px;
+  width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+  /* line 556, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  .quote {
+    padding-top: 30px;
+  }
+
+  /* line 560, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page h5 {
+    padding: 0 50px 0 50px;
+  }
+  /* line 563, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page p {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 570, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  body {
+    font-size: 10px;
+  }
+
+  /* line 573, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  ul.navbar-nav {
+    display: none;
+  }
+
+  /* line 577, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page .browser-example {
+    width: 400px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+  }
+  /* line 582, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page img {
+    margin: 0 0 0 5px;
+  }
+  /* line 585, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page p {
+    width: 80%;
+  }
+  /* line 589, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page .result.row h2, #featured-perspective-page .result.row h3 {
+    padding: 0 15px 0 15px;
+  }
+  /* line 592, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page .result.row a.learn-more {
+    padding: 0 15px 0 15px;
+  }
+  /* line 595, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page .result.row .plus {
+    text-align: left;
+  }
+  /* line 600, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page .social-proof h5 {
+    margin-left: -40px;
+  }
+  /* line 605, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page .testimonial h3 {
+    font-size: 1.5em;
+  }
+  /* line 608, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page .testimonial .org {
+    display: none;
+  }
+  /* line 611, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page .testimonial .quoter {
+    padding: none;
+  }
+  /* line 617, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .intro {
+    padding-bottom: 0;
+  }
+  /* line 620, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page h3 {
+    padding: 10px 0 0 0;
+  }
+  /* line 623, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page h4 {
+    padding-top: 50px;
+  }
+  /* line 626, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page p {
+    font-family: "MuseoSans300Regular";
+    color: #232222;
+    font-size: 1.2em;
+    padding: 6px 0;
+  }
+  /* line 632, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .number {
+    padding-bottom: 70px;
+  }
+  /* line 634, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .number p.big-number {
+    font-family: "MuseoSans700";
+    color: #55a9f7;
+    font-size: 5em;
+    text-align: center;
+  }
+  /* line 640, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .number p.explanation {
+    font-size: 1.6em;
+    margin-top: -25px;
+  }
+  /* line 644, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .number p {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0 60px 0 60px;
+  }
+  /* line 649, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .number .number.col-md-4 {
+    width: 26%;
+  }
+  /* line 652, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .number .firstnumber.col-md-4 {
+    width: 26%;
+    margin-left: 180px;
+  }
+  /* line 658, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .features h5, #featured-perspective-page #experts-page .features h6 {
+    font-family: "MuseoSans300Regular";
+    color: #585858;
+    font-size: 2em;
+  }
+  /* line 663, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .features p.contact {
+    font-family: "Georgia", serif;
+    font-style: italic;
+    color: cadetblue;
+  }
+  /* line 668, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .features h6 {
+    text-align: center;
+  }
+  /* line 671, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .features .mail.row {
+    padding: 90px 0 90px 0;
+  }
+  /* line 673, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .features .mail.row img {
+    padding-top: 30px;
+  }
+  /* line 677, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .features .browser.row {
+    padding-bottom: 120px;
+  }
+  /* line 679, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .features .browser.row img {
+    padding-top: 10px;
+  }
+  /* line 683, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .features .support.row {
+    padding-bottom: 90px;
+  }
+  /* line 685, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .features .support.row img {
+    margin-top: -15px;
+  }
+  /* line 691, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .case img {
+    padding-top: 20px;
+  }
+  /* line 696, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .contact.row {
+    font-family: 'Georgia';
+    font-style: italic;
+    color: #373838;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 85px auto;
+  }
+  /* line 706, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .cta.row h4 {
+    padding-bottom: 20px;
+  }
+  /* line 710, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .start {
+    padding-top: 10px;
+  }
+  /* line 713, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page input[type="text"] {
+    width: 100%;
+    border: 0;
+    background-color: #ebeff4;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 10px;
+    font-family: "MuseoSans300Regular";
+    color: #92969b;
+    font-style: italic;
+    margin: 5px;
+  }
+  /* line 724, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page button {
+    font-family: "MuseoSlab500";
+    color: #ffffff;
+    font-size: 1.71428em;
+    /* 24px / 14px */
+    background-color: #25bb99;
+    margin: 8px;
+  }
+  /* line 732, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .keep-in-touch-form label {
+    text-align: left;
+  }
+  /* line 735, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .keep-in-touch-form .form-group.row {
+    font-family: "MuseoSans300Regular";
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  /* line 741, /Users/mertonium/Code/potatochop/lib/views/comps/electnext_com/css/sass/be_frank.scss */
+  #featured-perspective-page #experts-page .keep-in-touch-form .form-group a {
+    font-size: 1em;
+    color: #3498db;
+    padding-left: 8px;
+    text-decoration: none;
+    font-family: "MuseoSans300Regular";
+    float: left;
+  }
+}
+#experts-page input.error {
+  border: 1px solid #b94a48;
+  color: #b94a48;
+}
