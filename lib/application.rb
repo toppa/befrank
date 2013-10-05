@@ -60,6 +60,20 @@ post '/newsletter_signup' do
   js_response.to_json
 end
 
+get '/fonts/:font_name' do
+  content_type(
+    case params[:font_name]
+      when /\.ttf$/  then 'font/truetype'
+      when /\.otf$/  then 'font/opentype'
+      when /\.woff$/ then 'font/woff'
+      when /\.eot$/  then 'application/vnd.ms-fontobject'
+      when /\.svg$/  then 'image/svg+xml'
+    end
+  )
+  file_path = File.join(File.dirname(__FILE__), 'public', 'fonts', params[:font_name])
+  File.exist?(file_path) ? send_file(file_path) : halt(404)
+end
+
 get '*' do
   file_path = File.join(File.dirname(__FILE__), 'public',  request.path.downcase)
   File.exist?(file_path) ? send_file(file_path) : halt(404)
