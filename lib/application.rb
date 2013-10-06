@@ -1,11 +1,10 @@
 require "sinatra"
-require "sinatra/content_for"
+require "sinatra/config_file"
 require "haml"
 require "pipedriver"
 require "json"
 
-# This env var needs to be set
-# bash> export PIPEDRIVE_API_KEY=abc123
+config_file '../config/settings.yml'
 
 # Handle html files
 get '/' do
@@ -27,8 +26,7 @@ post '/newsletter_signup' do
     js_response[:status] = 'error'
     js_response[:errors] = { "email" => ["can't be blank"] }
   else
-    Pipedriver.api_key = ENV['PIPEDRIVE_API_KEY'].to_s
-    Pipedriver.verify_ssl_certs = true
+    Pipedriver.api_key = settings.pipedrive_api_key
     person_attrs = {
       :name => params[:contact][:name],
       :email => params[:contact][:email],
