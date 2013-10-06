@@ -5,4 +5,4 @@ require 'bundler'
 Bundler.require
 
 require './lib/application'
-run Sinatra::Application
+run BeFrank
