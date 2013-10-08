@@ -60,7 +60,7 @@ class BeFrank < Sinatra::Base
     js_response.to_json
   end
 
-  get '/fonts/:font_name' do
+  get '/webfonts/:font_name' do
     content_type(
       case params[:font_name]
         when /\.ttf$/  then 'font/truetype'
