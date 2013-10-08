@@ -70,7 +70,7 @@ class BeFrank < Sinatra::Base
         when /\.svg$/  then 'image/svg+xml'
       end
     )
-    file_path = File.join(File.dirname(__FILE__), 'public', 'fonts', params[:font_name])
+    file_path = File.join(File.dirname(__FILE__), 'public', 'webfonts', params[:font_name])
     File.exist?(file_path) ? send_file(file_path) : halt(404)
   end
 
