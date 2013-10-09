@@ -31,7 +31,7 @@ class BeFrank < Sinatra::Base
       person_attrs = {
         :name => params[:contact][:name],
         :email => params[:contact][:email],
-        "49585fd0ad348042325d14daee14e13f747a993d" => 96 # Lead origin
+        "49585fd0ad348042325d14daee14e13f747a993d" => 97 # Lead origin
       }
       create_person_response = Pipedriver::Person.create(person_attrs)
       new_web_lead_id = create_person_response.success ? create_person_response.data["id"] : nil
