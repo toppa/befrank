@@ -44,7 +44,8 @@ class BeFrank < Sinatra::Base
           :subject => 'New web lead',
           :type => 'Web-Lead',
           :due_date => Date.today.to_s,
-          :person_id => new_web_lead_id
+          :person_id => new_web_lead_id,
+          :user_id => settings.pipedrive_assigned_user_id
         }
         activity_response = Pipedriver::Activity.create(activity_attrs)
 
