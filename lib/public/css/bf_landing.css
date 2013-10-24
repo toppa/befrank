@@ -1,0 +1,1071 @@
+@font-face {
+  font-family: 'MuseoSlab500';
+  src: url("/webfonts/Museo_Slab_500-webfont.eot");
+  src: url("/webfonts/Museo_Slab_500-webfont.eot?#iefix") format("embedded-opentype"), url("/webfonts/Museo_Slab_500-webfont.woff") format("woff"), url("/webfonts/Museo_Slab_500-webfont.ttf") format("truetype"), url("/webfonts/Museo_Slab_500-webfont.svg#MuseoSlab500") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSans300Regular';
+  src: url("/webfonts/MuseoSans_300-webfont.eot");
+  src: url("/webfonts/MuseoSans_300-webfont.eot?#iefix") format("embedded-opentype"), url("/webfonts/MuseoSans_300-webfont.woff") format("woff"), url("/webfonts/MuseoSans_300-webfont.ttf") format("truetype"), url("/webfonts/MuseoSans_300-webfont.svg#MuseoSans300Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSans700';
+  src: url("/webfonts/MuseoSans_700-webfont.eot");
+  src: url("/webfonts/MuseoSans_700-webfont.eot?#iefix") format("embedded-opentype"), url("/webfonts/MuseoSans_700-webfont.woff") format("woff"), url("/webfonts/MuseoSans_700-webfont.ttf") format("truetype"), url("/webfonts/MuseoSans_700-webfont.svg#MuseoSans700") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@-webkit-keyframes flicker {
+  /* line 15, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  from {
+    opacity: 0.50;
+  }
+
+  /* line 16, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  4% {
+    opacity: 0.50;
+  }
+
+  /* line 17, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  6% {
+    opacity: 0.45;
+  }
+
+  /* line 18, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  8% {
+    opacity: 0.55;
+  }
+
+  /* line 19, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  10% {
+    opacity: 0.45;
+  }
+
+  /* line 20, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  11% {
+    opacity: 0.50;
+  }
+
+  /* line 21, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  12% {
+    opacity: 0.65;
+  }
+
+  /* line 22, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  14% {
+    opacity: 0.55;
+  }
+
+  /* line 23, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  16% {
+    opacity: 0.70;
+  }
+
+  /* line 24, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  17% {
+    opacity: 0.55;
+  }
+
+  /* line 25, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  19% {
+    opacity: 0.50;
+  }
+
+  /* line 26, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  20% {
+    opacity: 0.50;
+  }
+
+  /* line 27, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  24% {
+    opacity: 0.50;
+  }
+
+  /* line 28, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  26% {
+    opacity: 0.99;
+  }
+
+  /* line 29, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  28% {
+    opacity: 0.50;
+  }
+
+  /* line 30, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  38% {
+    opacity: 0.45;
+  }
+
+  /* line 31, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  40% {
+    opacity: 0.50;
+  }
+
+  /* line 32, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  42% {
+    opacity: 0.60;
+  }
+
+  /* line 33, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  44% {
+    opacity: 0.50;
+  }
+
+  /* line 34, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  46% {
+    opacity: 0.50;
+  }
+
+  /* line 35, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  56% {
+    opacity: 0.50;
+  }
+
+  /* line 36, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  58% {
+    opacity: 0.75;
+  }
+
+  /* line 37, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  60% {
+    opacity: 0.50;
+  }
+
+  /* line 38, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  68% {
+    opacity: 0.50;
+  }
+
+  /* line 39, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  70% {
+    opacity: 0.80;
+  }
+
+  /*peak*/
+  /* line 40, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  72% {
+    opacity: 0.70;
+  }
+
+  /* line 41, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  93% {
+    opacity: 0.70;
+  }
+
+  /* line 42, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  95% {
+    opacity: 0.90;
+  }
+
+  /*peak*/
+  /* line 43, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  97% {
+    opacity: 0.70;
+  }
+
+  /* line 44, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  to {
+    opacity: 0.50;
+  }
+}
+
+@-moz-keyframes flicker {
+  /* line 15, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  from {
+    opacity: 0.50;
+  }
+
+  /* line 16, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  4% {
+    opacity: 0.50;
+  }
+
+  /* line 17, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  6% {
+    opacity: 0.45;
+  }
+
+  /* line 18, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  8% {
+    opacity: 0.55;
+  }
+
+  /* line 19, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  10% {
+    opacity: 0.45;
+  }
+
+  /* line 20, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  11% {
+    opacity: 0.50;
+  }
+
+  /* line 21, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  12% {
+    opacity: 0.65;
+  }
+
+  /* line 22, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  14% {
+    opacity: 0.55;
+  }
+
+  /* line 23, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  16% {
+    opacity: 0.70;
+  }
+
+  /* line 24, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  17% {
+    opacity: 0.55;
+  }
+
+  /* line 25, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  19% {
+    opacity: 0.50;
+  }
+
+  /* line 26, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  20% {
+    opacity: 0.50;
+  }
+
+  /* line 27, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  24% {
+    opacity: 0.50;
+  }
+
+  /* line 28, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  26% {
+    opacity: 0.99;
+  }
+
+  /* line 29, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  28% {
+    opacity: 0.50;
+  }
+
+  /* line 30, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  38% {
+    opacity: 0.45;
+  }
+
+  /* line 31, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  40% {
+    opacity: 0.50;
+  }
+
+  /* line 32, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  42% {
+    opacity: 0.60;
+  }
+
+  /* line 33, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  44% {
+    opacity: 0.50;
+  }
+
+  /* line 34, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  46% {
+    opacity: 0.50;
+  }
+
+  /* line 35, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  56% {
+    opacity: 0.50;
+  }
+
+  /* line 36, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  58% {
+    opacity: 0.75;
+  }
+
+  /* line 37, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  60% {
+    opacity: 0.50;
+  }
+
+  /* line 38, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  68% {
+    opacity: 0.50;
+  }
+
+  /* line 39, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  70% {
+    opacity: 0.80;
+  }
+
+  /*peak*/
+  /* line 40, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  72% {
+    opacity: 0.70;
+  }
+
+  /* line 41, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  93% {
+    opacity: 0.70;
+  }
+
+  /* line 42, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  95% {
+    opacity: 0.90;
+  }
+
+  /*peak*/
+  /* line 43, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  97% {
+    opacity: 0.70;
+  }
+
+  /* line 44, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  to {
+    opacity: 0.50;
+  }
+}
+
+@-ms-keyframes flicker {
+  /* line 15, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  from {
+    opacity: 0.50;
+  }
+
+  /* line 16, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  4% {
+    opacity: 0.50;
+  }
+
+  /* line 17, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  6% {
+    opacity: 0.45;
+  }
+
+  /* line 18, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  8% {
+    opacity: 0.55;
+  }
+
+  /* line 19, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  10% {
+    opacity: 0.45;
+  }
+
+  /* line 20, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  11% {
+    opacity: 0.50;
+  }
+
+  /* line 21, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  12% {
+    opacity: 0.65;
+  }
+
+  /* line 22, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  14% {
+    opacity: 0.55;
+  }
+
+  /* line 23, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  16% {
+    opacity: 0.70;
+  }
+
+  /* line 24, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  17% {
+    opacity: 0.55;
+  }
+
+  /* line 25, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  19% {
+    opacity: 0.50;
+  }
+
+  /* line 26, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  20% {
+    opacity: 0.50;
+  }
+
+  /* line 27, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  24% {
+    opacity: 0.50;
+  }
+
+  /* line 28, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  26% {
+    opacity: 0.99;
+  }
+
+  /* line 29, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  28% {
+    opacity: 0.50;
+  }
+
+  /* line 30, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  38% {
+    opacity: 0.45;
+  }
+
+  /* line 31, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  40% {
+    opacity: 0.50;
+  }
+
+  /* line 32, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  42% {
+    opacity: 0.60;
+  }
+
+  /* line 33, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  44% {
+    opacity: 0.50;
+  }
+
+  /* line 34, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  46% {
+    opacity: 0.50;
+  }
+
+  /* line 35, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  56% {
+    opacity: 0.50;
+  }
+
+  /* line 36, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  58% {
+    opacity: 0.75;
+  }
+
+  /* line 37, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  60% {
+    opacity: 0.50;
+  }
+
+  /* line 38, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  68% {
+    opacity: 0.50;
+  }
+
+  /* line 39, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  70% {
+    opacity: 0.80;
+  }
+
+  /*peak*/
+  /* line 40, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  72% {
+    opacity: 0.70;
+  }
+
+  /* line 41, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  93% {
+    opacity: 0.70;
+  }
+
+  /* line 42, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  95% {
+    opacity: 0.90;
+  }
+
+  /*peak*/
+  /* line 43, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  97% {
+    opacity: 0.70;
+  }
+
+  /* line 44, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  to {
+    opacity: 0.50;
+  }
+}
+
+@-o-keyframes flicker {
+  /* line 15, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  from {
+    opacity: 0.50;
+  }
+
+  /* line 16, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  4% {
+    opacity: 0.50;
+  }
+
+  /* line 17, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  6% {
+    opacity: 0.45;
+  }
+
+  /* line 18, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  8% {
+    opacity: 0.55;
+  }
+
+  /* line 19, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  10% {
+    opacity: 0.45;
+  }
+
+  /* line 20, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  11% {
+    opacity: 0.50;
+  }
+
+  /* line 21, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  12% {
+    opacity: 0.65;
+  }
+
+  /* line 22, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  14% {
+    opacity: 0.55;
+  }
+
+  /* line 23, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  16% {
+    opacity: 0.70;
+  }
+
+  /* line 24, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  17% {
+    opacity: 0.55;
+  }
+
+  /* line 25, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  19% {
+    opacity: 0.50;
+  }
+
+  /* line 26, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  20% {
+    opacity: 0.50;
+  }
+
+  /* line 27, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  24% {
+    opacity: 0.50;
+  }
+
+  /* line 28, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  26% {
+    opacity: 0.99;
+  }
+
+  /* line 29, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  28% {
+    opacity: 0.50;
+  }
+
+  /* line 30, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  38% {
+    opacity: 0.45;
+  }
+
+  /* line 31, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  40% {
+    opacity: 0.50;
+  }
+
+  /* line 32, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  42% {
+    opacity: 0.60;
+  }
+
+  /* line 33, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  44% {
+    opacity: 0.50;
+  }
+
+  /* line 34, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  46% {
+    opacity: 0.50;
+  }
+
+  /* line 35, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  56% {
+    opacity: 0.50;
+  }
+
+  /* line 36, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  58% {
+    opacity: 0.75;
+  }
+
+  /* line 37, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  60% {
+    opacity: 0.50;
+  }
+
+  /* line 38, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  68% {
+    opacity: 0.50;
+  }
+
+  /* line 39, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  70% {
+    opacity: 0.80;
+  }
+
+  /*peak*/
+  /* line 40, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  72% {
+    opacity: 0.70;
+  }
+
+  /* line 41, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  93% {
+    opacity: 0.70;
+  }
+
+  /* line 42, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  95% {
+    opacity: 0.90;
+  }
+
+  /*peak*/
+  /* line 43, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  97% {
+    opacity: 0.70;
+  }
+
+  /* line 44, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  to {
+    opacity: 0.50;
+  }
+}
+
+@-keyframes flicker {
+  /* line 15, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  from {
+    opacity: 0.50;
+  }
+
+  /* line 16, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  4% {
+    opacity: 0.50;
+  }
+
+  /* line 17, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  6% {
+    opacity: 0.45;
+  }
+
+  /* line 18, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  8% {
+    opacity: 0.55;
+  }
+
+  /* line 19, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  10% {
+    opacity: 0.45;
+  }
+
+  /* line 20, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  11% {
+    opacity: 0.50;
+  }
+
+  /* line 21, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  12% {
+    opacity: 0.65;
+  }
+
+  /* line 22, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  14% {
+    opacity: 0.55;
+  }
+
+  /* line 23, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  16% {
+    opacity: 0.70;
+  }
+
+  /* line 24, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  17% {
+    opacity: 0.55;
+  }
+
+  /* line 25, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  19% {
+    opacity: 0.50;
+  }
+
+  /* line 26, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  20% {
+    opacity: 0.50;
+  }
+
+  /* line 27, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  24% {
+    opacity: 0.50;
+  }
+
+  /* line 28, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  26% {
+    opacity: 0.99;
+  }
+
+  /* line 29, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  28% {
+    opacity: 0.50;
+  }
+
+  /* line 30, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  38% {
+    opacity: 0.45;
+  }
+
+  /* line 31, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  40% {
+    opacity: 0.50;
+  }
+
+  /* line 32, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  42% {
+    opacity: 0.60;
+  }
+
+  /* line 33, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  44% {
+    opacity: 0.50;
+  }
+
+  /* line 34, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  46% {
+    opacity: 0.50;
+  }
+
+  /* line 35, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  56% {
+    opacity: 0.50;
+  }
+
+  /* line 36, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  58% {
+    opacity: 0.75;
+  }
+
+  /* line 37, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  60% {
+    opacity: 0.50;
+  }
+
+  /* line 38, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  68% {
+    opacity: 0.50;
+  }
+
+  /* line 39, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  70% {
+    opacity: 0.80;
+  }
+
+  /*peak*/
+  /* line 40, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  72% {
+    opacity: 0.70;
+  }
+
+  /* line 41, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  93% {
+    opacity: 0.70;
+  }
+
+  /* line 42, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  95% {
+    opacity: 0.90;
+  }
+
+  /*peak*/
+  /* line 43, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  97% {
+    opacity: 0.70;
+  }
+
+  /* line 44, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+  to {
+    opacity: 0.50;
+  }
+}
+
+/* line 3, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#title-page {
+  padding: 80px 0 150px;
+  background-image: url("/images/landing.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 10, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#title-page .logo {
+  font-family: "MuseoSlab500";
+  font-size: 1.857em;
+  /* 18px / 14px */
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  padding: 0 0 0 15px;
+}
+/* line 96, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+#title-page .logo:before, #title-page .logo:after {
+  content: " ";
+  display: table;
+}
+/* line 100, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+#title-page .logo:after {
+  clear: both;
+}
+/* line 19, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#title-page .logo .red {
+  color: #b00f15;
+}
+/* line 22, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#title-page .logo .blue {
+  color: #0a84b8;
+}
+/* line 27, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#title-page .introduction .headline {
+  font-family: "MuseoSans300Regular";
+  text-align: center;
+  color: #f9f9fb;
+  font-size: 4em;
+  margin-bottom: 80px;
+}
+/* line 34, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#title-page .introduction .text {
+  float: left;
+  width: 40%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+/* line 39, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#title-page .introduction .text .subheadline {
+  font-family: "MuseoSans300Regular";
+  text-align: left;
+  color: #f9f9fb;
+  font-size: 1.6em;
+}
+/* line 45, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#title-page .introduction .text button {
+  font-family: "MuseoSlab500";
+  color: #ffffff;
+  font-size: 1.71428em;
+  /* 24px / 14px */
+  background-color: #25bb99;
+  margin: 8px;
+  margin-top: 10%;
+}
+/* line 55, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#title-page .browser-example {
+  float: left;
+  width: 48%;
+  margin-right: 5%;
+  margin-left: 2%;
+}
+/* line 60, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#title-page .browser-example .chrome {
+  background: url("/images/home_sprite.png") no-repeat 0 -329px;
+  width: 99%;
+  padding-top: 33px;
+}
+/* line 65, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#title-page .browser-example .window {
+  width: 99%;
+  margin-right: 1px;
+  height: 325px;
+  overflow: scroll;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+/* line 79, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#partners {
+  background-color: #303030;
+}
+/* line 82, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#partners .partners p {
+  font-family: "MuseoSans300Regular";
+  color: #f9f9fb;
+  padding: 10px;
+  text-align: center;
+}
+/* line 88, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#partners .partners img {
+  margin: auto;
+  padding: 15px;
+}
+
+/* line 96, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#how-it-works {
+  background-color: #f1f3f5;
+}
+/* line 96, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+#how-it-works:before, #how-it-works:after {
+  content: " ";
+  display: table;
+}
+/* line 100, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+#how-it-works:after {
+  clear: both;
+}
+/* line 100, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#how-it-works .three-steps h2 {
+  font-family: "MuseoSans300Regular";
+  color: #303030;
+  text-align: center;
+  font-size: 2em;
+  padding: 40px 0 20px 0;
+  margin: 0;
+}
+/* line 108, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#how-it-works .three-steps .step {
+  width: 33%;
+  float: left;
+}
+/* line 111, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#how-it-works .three-steps .step img {
+  margin: auto;
+}
+/* line 114, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#how-it-works .three-steps .step h3 {
+  font-family: "MuseoSans300Regular";
+  color: #303030;
+  font-size: 1.5em;
+  margin-bottom: 150px;
+  padding: 0 11% 0 10%;
+  text-align: center;
+}
+/* line 124, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#how-it-works .testimonial {
+  width: 80%;
+  margin-bottom: 100px;
+  margin-left: 10%;
+  float: left;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+/* line 132, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#how-it-works .testimonial .tim .quote {
+  width: 80%;
+  float: left;
+}
+/* line 135, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#how-it-works .testimonial .tim .quote p {
+  font-family: "MuseoSans300Regular";
+  color: #303030;
+  font-size: 1.3em;
+  padding: 20px 10px 0 15px;
+}
+/* line 96, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+#how-it-works .testimonial .tim .quote p:before, #how-it-works .testimonial .tim .quote p:after {
+  content: " ";
+  display: table;
+}
+/* line 100, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+#how-it-works .testimonial .tim .quote p:after {
+  clear: both;
+}
+/* line 143, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#how-it-works .testimonial .tim .picture {
+  float: right;
+  width: 20%;
+  padding-top: 20px;
+}
+
+/* line 154, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#signup {
+  margin: 0 auto;
+  background-color: #f1f3f5;
+  padding: 80px 0 150px;
+}
+/* line 96, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+#signup:before, #signup:after {
+  content: " ";
+  display: table;
+}
+/* line 100, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+#signup:after {
+  clear: both;
+}
+/* line 159, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#signup .last-words {
+  float: left;
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/* line 164, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#signup .last-words h4 {
+  font-family: "MuseoSans700";
+  color: #232222;
+  font-size: 2em;
+}
+/* line 169, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#signup .last-words h3 {
+  font-family: "MuseoSans300Regular";
+  color: #232222;
+  font-size: 1.3em;
+}
+/* line 96, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+#signup .signup-form-wrapper:before, #signup .signup-form-wrapper:after {
+  content: " ";
+  display: table;
+}
+/* line 100, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/_mixins.scss */
+#signup .signup-form-wrapper:after {
+  clear: both;
+}
+/* line 179, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#signup .keep-in-touch-form {
+  float: left;
+  width: 40%;
+}
+/* line 182, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#signup .keep-in-touch-form label {
+  text-align: left;
+}
+/* line 185, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#signup .keep-in-touch-form .form-group {
+  font-family: "MuseoSans300Regular";
+}
+/* line 188, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#signup .keep-in-touch-form input[type="text"] {
+  width: 80%;
+  border: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  padding: 10px;
+  font-family: "MuseoSans300Regular";
+  color: #92969b;
+  font-style: italic;
+  margin: 5px;
+}
+/* line 200, /Users/toppa/Projects/potatochop/lib/views/comps/electnext_com/css/sass/bf_landing.scss */
+#signup input[type="submit"] {
+  font-family: "MuseoSlab500";
+  color: #ffffff;
+  font-size: 1.71428em;
+  /* 24px / 14px */
+  background-color: #25bb99;
+  text-align: center;
+}
+#signup .keep-in-touch-form input.error {
+  background-color: #f2dede;
+  border: 1px solid #b94a48;
+  color: #b94a48;
+}
+
+#signup  .sign-up-confirmation {
+  font-family: "MuseoSlab500";
+  font-size: 1.28571428571429em; /* 18px / 14px */
+}

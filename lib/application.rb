@@ -17,20 +17,25 @@ class BeFrank < Sinatra::Base
   end
 
   post '/newsletter_signup' do
-    js_response = {}
-  
+    js_response = { :status => nil, :errors => {} }
+
     # Hand-rolled validation
     if params[:contact][:name].nil? || params[:contact][:name] == ""
       js_response[:status] = 'error'
-      js_response[:errors] = { "name" => ["can't be blank"] }
-    elsif params[:contact][:email].nil? || params[:contact][:email] == ""
+      js_response[:errors][:name] = "can't be blank"
+    end
+
+    if params[:contact][:email].nil? || params[:contact][:email] == ""
       js_response[:status] = 'error'
-      js_response[:errors] = { "email" => ["can't be blank"] }
-    else
+      js_response[:errors][:email] = "can't be blank"
+    end
+
+    unless js_response[:status] == 'error'
       Pipedriver.api_key = settings.pipedrive_api_key
       person_attrs = {
         :name => params[:contact][:name],
         :email => params[:contact][:email],
+        "4c35dc4db71bb5ce0b8ccdab07a3bdd75d14772f" => params[:contact][:company],
         "49585fd0ad348042325d14daee14e13f747a993d" => 97 # Lead origin
       }
       create_person_response = Pipedriver::Person.create(person_attrs)
